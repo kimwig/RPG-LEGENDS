@@ -1,6 +1,18 @@
 package rpg.dafney.legends;
 
-public class Main
-{
+import org.bukkit.plugin.java.JavaPlugin;
 
+public class Main extends JavaPlugin
+{
+	// ** onEnable
+	public void onEnable()
+	{
+		
+	}
+	
+	// ** onDisable
+	public void onDisable()
+	{
+		
+	}
 }
