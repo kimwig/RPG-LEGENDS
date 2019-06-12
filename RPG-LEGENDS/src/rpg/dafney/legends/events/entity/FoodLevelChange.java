@@ -11,8 +11,8 @@ public class FoodLevelChange
 		// ** Player
 		Player player = (Player) event.getEntity();
 		
-		// ** Reset
-		player.setSaturation(200);
+		// ** Reset Exhaustion and Saturation
+		player.setSaturation(20);
 		player.setExhaustion(0);
 		
 		// ** Cancel event
