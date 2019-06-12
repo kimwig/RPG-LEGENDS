@@ -3,6 +3,7 @@ package rpg.dafney.legends;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import rpg.dafney.legends.functions.Config;
+import rpg.dafney.legends.functions.Timers;
 
 public class Main extends JavaPlugin
 {
@@ -11,6 +12,9 @@ public class Main extends JavaPlugin
 	{
 		// ** Load Config
 		Config.Load();
+		
+		// ** Load Timers
+		Timers.Start();
 	}
 	
 	// ** onDisable
