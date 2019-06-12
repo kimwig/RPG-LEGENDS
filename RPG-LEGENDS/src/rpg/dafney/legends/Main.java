@@ -33,10 +33,10 @@ public class Main extends JavaPlugin
 		scheduler = server.getScheduler();
 		
 		// ** Load Config
-		Config.Load();
+		Config.loadConfig();
 		
 		// ** Load Timers
-		Timers.Start();
+		Timers.startTimers();
 		
 		// ** Register Listener
 		pluginManager.registerEvents(new MainListener(), this);
@@ -46,7 +46,7 @@ public class Main extends JavaPlugin
 	public void onDisable()
 	{
 		// ** Save Config
-		Config.Save();
+		Config.saveConfig();
 		
 		// ** Reset Tasks
 		scheduler.cancelTasks(plugin);

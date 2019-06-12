@@ -2,12 +2,12 @@ package rpg.dafney.legends.functions;
 
 public class Config
 {
-	public static void Load()
+	public static void loadConfig()
 	{
 		
 	}
 	
-	public static void Save()
+	public static void saveConfig()
 	{
 		
 	}
