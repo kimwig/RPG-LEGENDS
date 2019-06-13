@@ -14,7 +14,7 @@ public class PlayerQuit
 		// ** Player
 		Player player = event.getPlayer();
 		
-		// ** JoinMessage
+		// ** QuitMessage
 		PlayerQuit.sendQuitMessage(player, event);
 		
 		// ** Return

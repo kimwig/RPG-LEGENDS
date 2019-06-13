@@ -27,16 +27,16 @@ import rpg.dafney.legends.events.server.ServerListPing;
 public class MainListener implements Listener
 {
 	@EventHandler
-	void onEvent(BlockBreakEvent event) { BlockBreak.onEvent(event); return; }
+	void onEvent(BlockBreakEvent event) { BlockBreak.onEvent(event); }
 
 	@EventHandler
-	void onEvent(BlockPlaceEvent event) { BlockPlace.onEvent(event); return; }
+	void onEvent(BlockPlaceEvent event) { BlockPlace.onEvent(event); }
 
 	@EventHandler
 	void onEvent(LeavesDecayEvent event) { LeavesDecay.onEvent(event); }
 
 	@EventHandler
-	void onEvent(EntityDamageEvent event) { EntityDamage.onEvent(event); return; }
+	void onEvent(EntityDamageEvent event) { EntityDamage.onEvent(event); }
 
 	@EventHandler
 	void onEvent(FoodLevelChangeEvent event) { FoodLevelChange.onEvent(event); }
@@ -48,10 +48,10 @@ public class MainListener implements Listener
 	void onEvent(PlayerDropItemEvent event) { PlayerDropItem.onEvent(event); }
 
 	@EventHandler
-	void onEvent(PlayerJoinEvent event) { PlayerJoin.onEvent(event); return; }
+	void onEvent(PlayerJoinEvent event) { PlayerJoin.onEvent(event); }
 
 	@EventHandler
-	void onEvent(PlayerQuitEvent event) { PlayerQuit.onEvent(event); return; }
+	void onEvent(PlayerQuitEvent event) { PlayerQuit.onEvent(event); }
 
 	@EventHandler
 	void onEvent(ServerListPingEvent event) { ServerListPing.onEvent(event); }
