@@ -21,7 +21,7 @@ public class PlayerQuit
 		return;
 	}
 	
-	// ** sendJoinMessage
+	// ** sendQuitMessage
 	public static void sendQuitMessage(Player player, PlayerQuitEvent event)
 	{
 		// ** Null Message, Broadcasting by ourself
