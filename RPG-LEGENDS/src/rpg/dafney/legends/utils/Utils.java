@@ -5,6 +5,8 @@ import java.text.DecimalFormatSymbols;
 
 import org.bukkit.ChatColor;
 
+import rpg.dafney.legends.Main;
+
 public class Utils
 {
 	// ** Translate Color
@@ -21,5 +23,21 @@ public class Utils
 		symbol.setGroupingSeparator(',');
 		formatter.setDecimalFormatSymbols(symbol);
 		return formatter.format(value);
+	}
+	
+	// ** Broadcast a Message
+	public static void broadcastMessage(String message)
+	{
+		// ** Message
+		if(message == null || message.isEmpty()) { return; }
+		
+		// ** Color
+		message = Utils.color(message);
+		
+		// ** Broadcast
+		Main.server.broadcastMessage(message);
+		
+		// ** Return
+		return;
 	}
 }

@@ -8,5 +8,7 @@ public class Texts
 	public static String server_motd = server_name + " " + server_subname + "\n" + server_url;
 
 	public static String join_message = "&8&l > &8%player% logged in&r";
+	public static String join_message_op = "&d&l > &d%player% logged in&r";
 	public static String quit_message = "&8&l > &8%player% logged out&r";
+	public static String quit_message_op = "&d8&l > &d%player% logged out&r";
 }

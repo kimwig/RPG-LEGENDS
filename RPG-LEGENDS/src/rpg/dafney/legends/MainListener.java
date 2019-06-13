@@ -8,6 +8,8 @@ import org.bukkit.event.block.LeavesDecayEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.server.ServerListPingEvent;
 
 import rpg.dafney.legends.events.block.BlockBreak;
@@ -16,6 +18,8 @@ import rpg.dafney.legends.events.block.LeavesDecay;
 import rpg.dafney.legends.events.entity.FoodLevelChange;
 import rpg.dafney.legends.events.inventory.InventoryDrag;
 import rpg.dafney.legends.events.player.PlayerDropItem;
+import rpg.dafney.legends.events.player.PlayerJoin;
+import rpg.dafney.legends.events.player.PlayerQuit;
 import rpg.dafney.legends.events.server.ServerListPing;
 
 public class MainListener implements Listener

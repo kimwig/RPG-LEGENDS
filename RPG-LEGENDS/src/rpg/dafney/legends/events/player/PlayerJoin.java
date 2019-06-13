@@ -13,13 +13,28 @@ public class PlayerJoin
 	{
 		// ** Player
 		Player player = event.getPlayer();
-
-		// ** Display name
-		String displayname = player.getDisplayName();
 		
-		// ** Join Message
-		if(player.isOp() == false) { event.setJoinMessage(Utils.color(Texts.join_message.replace("%player%", displayname))); }
-		else { event.setJoinMessage(""); }
+		// ** JoinMessage
+		PlayerJoin.sendJoinMessage(player, event);
+		
+		// ** Return
+		return;
+	}
+	
+	// ** sendJoinMessage
+	public static void sendJoinMessage(Player player, PlayerJoinEvent event)
+	{
+		// ** Null Message, Broadcasting by ourself
+		event.setJoinMessage(null);
+		
+		// ** Name
+		String pName = player.getName();
+		
+		// ** Op Join
+		if(player.isOp()) { Utils.broadcastMessage(Texts.join_message_op.replace("%player%", pName)); }
+		
+		// ** Player Join
+		else { Utils.broadcastMessage(Texts.join_message.replace("%player%", pName)); }
 		
 		// ** Return
 		return;

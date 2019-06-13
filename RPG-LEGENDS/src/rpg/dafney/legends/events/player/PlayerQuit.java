@@ -14,12 +14,27 @@ public class PlayerQuit
 		// ** Player
 		Player player = event.getPlayer();
 		
-		// ** Display name
-		String displayname = player.getDisplayName();
+		// ** JoinMessage
+		PlayerQuit.sendQuitMessage(player, event);
 		
-		// ** Quit Message
-		if(player.isOp() == false) { event.setQuitMessage(Utils.color(Texts.quit_message.replace("%player%", displayname))); }
-		else { event.setQuitMessage(""); }
+		// ** Return
+		return;
+	}
+	
+	// ** sendJoinMessage
+	public static void sendQuitMessage(Player player, PlayerQuitEvent event)
+	{
+		// ** Null Message, Broadcasting by ourself
+		event.setQuitMessage(null);
+		
+		// ** Name
+		String pName = player.getName();
+		
+		// ** Op Join
+		if(player.isOp()) { Utils.broadcastMessage(Texts.quit_message_op.replace("%player%", pName)); }
+		
+		// ** Player Join
+		else { Utils.broadcastMessage(Texts.quit_message.replace("%player%", pName)); }
 		
 		// ** Return
 		return;
