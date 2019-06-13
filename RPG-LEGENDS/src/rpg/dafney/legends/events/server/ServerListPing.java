@@ -11,7 +11,7 @@ public class ServerListPing
 	public static void onEvent(ServerListPingEvent event)
 	{
 		// ** Motd
-		event.setMotd(ChatColor.translateAlternateColorCodes('&', Texts.server_motd));
+		event.setMotd(Utils.colorTranslate(Texts.server_motd));
 		
 		// ** Return
 		return;
