@@ -5,6 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.block.LeavesDecayEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
@@ -15,6 +16,7 @@ import org.bukkit.event.server.ServerListPingEvent;
 import rpg.dafney.legends.events.block.BlockBreak;
 import rpg.dafney.legends.events.block.BlockPlace;
 import rpg.dafney.legends.events.block.LeavesDecay;
+import rpg.dafney.legends.events.entity.EntityDamage;
 import rpg.dafney.legends.events.entity.FoodLevelChange;
 import rpg.dafney.legends.events.inventory.InventoryDrag;
 import rpg.dafney.legends.events.player.PlayerDropItem;
@@ -34,6 +36,9 @@ public class MainListener implements Listener
 	void onEvent(LeavesDecayEvent event) { LeavesDecay.onEvent(event); }
 
 	@EventHandler
+	void onEvent(EntityDamageEvent event) { EntityDamage.onEvent(event); return; }
+
+	@EventHandler
 	void onEvent(FoodLevelChangeEvent event) { FoodLevelChange.onEvent(event); }
 
 	@EventHandler
@@ -43,10 +48,10 @@ public class MainListener implements Listener
 	void onEvent(PlayerDropItemEvent event) { PlayerDropItem.onEvent(event); }
 
 	@EventHandler
-	void onEvent(PlayerJoinEvent event) { PlayerJoin.onEvent(event); }
+	void onEvent(PlayerJoinEvent event) { PlayerJoin.onEvent(event); return; }
 
 	@EventHandler
-	void onEvent(PlayerQuitEvent event) { PlayerQuit.onEvent(event); }
+	void onEvent(PlayerQuitEvent event) { PlayerQuit.onEvent(event); return; }
 
 	@EventHandler
 	void onEvent(ServerListPingEvent event) { ServerListPing.onEvent(event); }
