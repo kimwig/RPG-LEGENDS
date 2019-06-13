@@ -31,10 +31,10 @@ public class PlayerQuit
 		String pName = player.getName();
 		
 		// ** Op Join
-		if(player.isOp()) { Utils.broadcastMessage(Texts.quit_message_op.replace("%player%", pName)); }
+		if(player.isOp()) { Utils.broadcastMessage(Texts.player_quit_message_op.replace("%player%", pName)); }
 		
 		// ** Player Join
-		else { Utils.broadcastMessage(Texts.quit_message.replace("%player%", pName)); }
+		else { Utils.broadcastMessage(Texts.player_quit_message.replace("%player%", pName)); }
 		
 		// ** Return
 		return;
