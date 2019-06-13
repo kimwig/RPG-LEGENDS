@@ -12,8 +12,8 @@ public class Utils
 	// ** Color Translate
 	public static final String colorTranslate(String string)
 	{
-        return ChatColor.translateAlternateColorCodes('&', string);
-    }
+        	return ChatColor.translateAlternateColorCodes('&', string);
+   	}
 
 	// ** Number Format
 	public static final String format(double value)
