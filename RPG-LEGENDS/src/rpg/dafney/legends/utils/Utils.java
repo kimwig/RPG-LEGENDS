@@ -25,7 +25,7 @@ public class Utils
 		return formatter.format(value);
 	}
 	
-	// ** Broadcast a Message
+	// ** Broadcast Message
 	public static void broadcastMessage(String message)
 	{
 		// ** Message
