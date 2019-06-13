@@ -39,5 +39,11 @@ public class MainListener implements Listener
 	void onEvent(PlayerDropItemEvent event) { PlayerDropItem.onEvent(event); }
 
 	@EventHandler
+	void onEvent(PlayerJoinEvent event) { PlayerJoin.onEvent(event); }
+
+	@EventHandler
+	void onEvent(PlayerQuitEvent event) { PlayerQuit.onEvent(event); }
+
+	@EventHandler
 	void onEvent(ServerListPingEvent event) { ServerListPing.onEvent(event); }
 }
