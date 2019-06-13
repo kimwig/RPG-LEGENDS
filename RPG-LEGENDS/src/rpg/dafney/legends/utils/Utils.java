@@ -9,8 +9,8 @@ import rpg.dafney.legends.Main;
 
 public class Utils
 {
-	// ** Translate Color
-	public static final String color(String string)
+	// ** Color Translate
+	public static final String colorTranslate(String string)
 	{
         return ChatColor.translateAlternateColorCodes('&', string);
     }
@@ -32,7 +32,7 @@ public class Utils
 		if(message == null || message.isEmpty()) { return; }
 		
 		// ** Color
-		message = Utils.color(message);
+		message = Utils.colorTranslate(message);
 		
 		// ** Broadcast
 		Main.server.broadcastMessage(message);
