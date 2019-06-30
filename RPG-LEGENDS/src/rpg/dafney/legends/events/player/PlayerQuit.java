@@ -3,7 +3,7 @@ package rpg.dafney.legends.events.player;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import rpg.dafney.legends.functions.Texts;
+import rpg.dafney.legends.data.Texts;
 import rpg.dafney.legends.utils.Utils;
 
 public class PlayerQuit

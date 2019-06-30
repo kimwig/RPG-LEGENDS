@@ -1,4 +1,6 @@
-package rpg.dafney.legends.functions;
+package rpg.dafney.legends.data;
+
+import rpg.dafney.legends.functions.Tags;
 
 public class Texts
 {

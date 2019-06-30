@@ -9,7 +9,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import net.minecraft.server.v1_14_R1.IChatBaseComponent;
 import net.minecraft.server.v1_14_R1.PacketPlayOutPlayerListHeaderFooter;
 import net.minecraft.server.v1_14_R1.IChatBaseComponent.ChatSerializer;
-import rpg.dafney.legends.functions.Texts;
+import rpg.dafney.legends.data.Texts;
 import rpg.dafney.legends.utils.Utils;
 
 public class PlayerJoin

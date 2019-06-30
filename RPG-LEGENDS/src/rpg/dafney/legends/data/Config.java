@@ -1,4 +1,4 @@
-package rpg.dafney.legends.functions;
+package rpg.dafney.legends.data;
 
 public class Config
 {

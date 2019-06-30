@@ -6,7 +6,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
-import rpg.dafney.legends.functions.Config;
+import rpg.dafney.legends.data.Config;
 import rpg.dafney.legends.functions.Timers;
 
 public class Main extends JavaPlugin

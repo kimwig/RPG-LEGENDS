@@ -2,7 +2,7 @@ package rpg.dafney.legends.events.server;
 
 import org.bukkit.event.server.ServerListPingEvent;
 
-import rpg.dafney.legends.functions.Texts;
+import rpg.dafney.legends.data.Texts;
 import rpg.dafney.legends.utils.Utils;
 
 public class ServerListPing
