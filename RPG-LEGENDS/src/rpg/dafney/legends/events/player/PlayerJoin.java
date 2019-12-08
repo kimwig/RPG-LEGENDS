@@ -56,13 +56,13 @@ public class PlayerJoin
 		PacketPlayOutPlayerListHeaderFooter packet = new PacketPlayOutPlayerListHeaderFooter();
 		try {
 			// ** Header field
-			Field headerField = packet.getClass().getDeclaredField("a");
+			Field headerField = packet.getClass().getDeclaredField("header");
 			headerField.setAccessible(true);
 			headerField.set(packet, tabHeader);
 			headerField.setAccessible(false);
 			
 			// ** Footer field
-			Field footerField = packet.getClass().getDeclaredField("b");
+			Field footerField = packet.getClass().getDeclaredField("footer");
 			footerField.setAccessible(true);
 			footerField.set(packet, tabFooter);
 			footerField.setAccessible(false);
